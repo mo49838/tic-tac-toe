@@ -9,21 +9,26 @@
 <body>
     <h1>Tic-Tac-Toe</h1>
 
-    <section id="score">
-        <!--score -->
+    <section id="scoreArea">
+        <div id="wins">Wins: </div>
+        <div class="score" id="blueScore">0</div>
+        <div class="score" id="redScore">0</div>
     </section>
 
     <section id="board">
-        <!--board -->
+        <!--board built in javascript-->
     </section>
 
-    <section id="whoseTurn">
-        <!--whoseTurn -->
-    </section>
-
-    <h2 id="buttons">
-        X's Turn
+    <h2 id="whoseTurn">
+        <!--assigned in javascript -->
     </h2>
+
+    <section id="buttons">
+        <button type="button" onclick="(increBlue())">Blue Won</button>
+        <button type="button" onclick="increRed()">Red Won</button>
+        <button type="button" onclick="clearBoard()">Clear Board</button>
+        <button type="button" onclick="resetScore()">Reset Score</button>
+    </section>
 
     <script src="js/script.js"></script>
 </body>

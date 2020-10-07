@@ -1,6 +1,15 @@
 console.log("javascript linked");
 
+//global variables
+let players = ["Red","Blue"];
+let colors = ["red","blue"];
 let whoseTurn = "X";
+let redScore = 0;
+let blueScore = 0;
+
+//find dom objects
+let redScoreElem = document.getElementById("redScore");
+let blueScoreElem = document.getElementById("blueScore");
 
 function boxClicked(event){
     console.log(event);
@@ -30,3 +39,20 @@ function createBoard(){
 }
 
 createBoard();
+
+function resetScore(){
+    redScore = 0;
+    blueScore = 0;
+    redScoreElem.innerHTML = redScore;
+    blueScoreElem.innerHTML = blueScore;
+}
+
+function increBlue(){
+    blueScore++;
+    blueScoreElem.innerHTML = blueScore;
+}
+
+function increRed(){
+    redScore++;
+    redScoreElem.innerHTML = redScore;
+}

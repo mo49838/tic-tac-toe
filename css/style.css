@@ -3,17 +3,63 @@ body{
     text-align:center;
 }
 
+#scoreArea{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+#wins{
+    color: #444;
+	margin: 0;
+	padding: 0px 0px 6px 0px;
+	font-size: 41px;
+	letter-spacing: -2px;
+    font-weight: bold;
+    margin: 24px 0;
+}
+
+.score{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    color:  #ffffff;
+    font-size: 30px;
+}
+
+#redScore{
+    background-color: red;
+}
+
+#blueScore{
+    background-color: blue;
+}
+
 #board{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 45vh;
 }
-
 
 .box{
     background-color: #EFE7BC;
     width: 12vh;
     height: 12vh;
     border: 2px solid #FFA384;
+}
+
+button{	
+    text-align: center;
+    font-size: 25px;		
+    border-radius: 300px;
+    border: 2px solid #000000;
 }
