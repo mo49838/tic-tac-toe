@@ -1,0 +1,19 @@
+body{
+    background: #FFA384;
+    text-align:center;
+}
+
+#board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+.box{
+    background-color: #EFE7BC;
+    width: 12vh;
+    height: 12vh;
+    border: 2px solid #FFA384;
+}
