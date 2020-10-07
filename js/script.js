@@ -14,7 +14,7 @@ let whoseTurnElem = document.getElementById("whoseTurn");
 
 //called when box is clicked
 function boxClicked(event){
-    console.log(event);
+    
     //change background color
     event.target.style.background = colors[whoseTurn];
     //remove event listener so it doesn't change color again
@@ -58,11 +58,12 @@ function changeWhoseTurn(){
     whoseTurnElem.style.color = colors[whoseTurn];
 }
 
-function resetScore(){
+function resetGame(){
     redScore = 0;
     blueScore = 0;
     redScoreElem.innerHTML = redScore;
     blueScoreElem.innerHTML = blueScore;
+    clearBoard();
 }
 
 function increBlue(){
@@ -73,4 +74,12 @@ function increBlue(){
 function increRed(){
     redScore++;
     redScoreElem.innerHTML = redScore;
+}
+
+function clearBoard(){
+    for (let i=0;i<9;i++){
+        let currBox = document.getElementById(i);
+        currBox.addEventListener("click",boxClicked);
+        currBox.style.background = "#EFE7BC";
+    }
 }
